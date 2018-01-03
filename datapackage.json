@@ -1,0 +1,214 @@
+{
+    "title": "Cervical cancer",
+    "name": "cervical-cancer",
+    "sources": [
+        {
+            "title": "UCI - Cervical cancer (Risk Factors) Data Set",
+            "path": "https://archive.ics.uci.edu/ml/datasets/Cervical+cancer+%28Risk+Factors%29"
+        }
+    ],
+    "licences": [
+        {
+            "name": "odc-pddl",
+            "title": "Open Data Commons Public Domain Dedication and Licence (PDDL)",
+            "path": "http://opendatacommons.org/licenses/pddl/"
+        }
+    ],
+    "resources": [
+        {
+            "path": "data/cervical-cancer.csv",
+            "profile": "tabular-data-resource",
+            "encoding": "utf-8",
+            "name": "cervical-cancer",
+            "format": "csv",
+            "mediatype": "text/csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "Age",
+                        "type": "integer",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Number of sexual partners",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "First sexual intercourse",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Num of pregnancies",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Smokes",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Smokes (years)",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Smokes (packs/year)",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Hormonal Contraceptives",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Hormonal Contraceptives (years)",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "IUD",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "IUD (years)",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "STDs",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "STDs (number)",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "STDs:condylomatosis",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "STDs:cervical condylomatosis",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "STDs:vaginal condylomatosis",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "STDs:vulvo-perineal condylomatosis",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "STDs:syphilis",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "STDs:pelvic inflammatory disease",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "STDs:genital herpes",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "STDs:molluscum contagiosum",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "STDs:AIDS",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "STDs:HIV",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "STDs:Hepatitis B",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "STDs:HPV",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "STDs: Number of diagnosis",
+                        "type": "integer",
+                        "format": "default"
+                    },
+                    {
+                        "name": "STDs: Time since first diagnosis",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "STDs: Time since last diagnosis",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Dx:Cancer",
+                        "type": "integer",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Dx:CIN",
+                        "type": "integer",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Dx:HPV",
+                        "type": "integer",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Dx",
+                        "type": "integer",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Hinselmann",
+                        "type": "integer",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Schiller",
+                        "type": "integer",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Citology",
+                        "type": "integer",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Biopsy",
+                        "type": "integer",
+                        "format": "default"
+                    }
+                ],
+                "missingValues": [
+                    ""
+                ]
+            }
+        }
+    ]
+}
