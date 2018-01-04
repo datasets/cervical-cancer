@@ -1,4 +1,6 @@
-This is dataset about cervical cancer occurrences.
+This is dataset about cervical cancer occurrences. Cervical cancer is 
+one the most frequent cancer diseases that occur to women. This dataset 
+is showing some factors that might influence cervical cancer.
 
 ## Data
 
@@ -13,21 +15,22 @@ privacy concerns (missing values).
 * 36 attributes
 * Missing values: yes
 
-### Output data
-
 Output data is located in directory called `data`
 
 `data/cervical-cancer.csv`
 
 Attributes are the same as they were in input data.
 
-## Scripts
+## Preparation
+
+To get our output data several things are done to input data:
+* missing values marked with "?" are replaced with ""(empty space)
 
 Python scripts are located in directory `scripts`
 
 `scripts/main.py`
 
-## Licence
+## License
 Licensed under the [Public Domain Dedication and License][pddl] (assuming
 either no rights or public domain license in source data).
 
