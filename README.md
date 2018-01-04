@@ -9,7 +9,7 @@ The dataset comprises demographic information, habits, and historic medical reco
 858 patients. Several patients decided not to answer some of the questions because of 
 privacy concerns (missing values).
 
-* 858 instances
+* 835 instances
 * 36 attributes
 * Missing values: yes
 
