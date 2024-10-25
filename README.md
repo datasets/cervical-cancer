@@ -1,4 +1,4 @@
-<a href="https://datahub.io/core/cervical-cancer"><img src="https://badgen.net/badge/icon/View%20on%20datahub.io/orange?icon=https://datahub.io/datahub-cube-badge-icon.svg&label&scale=1.25)" alt="badge" /></a>
+<a className="gh-badge" href="https://datahub.io/core/cervical-cancer"><img src="https://badgen.net/badge/icon/View%20on%20datahub.io/orange?icon=https://datahub.io/datahub-cube-badge-icon.svg&label&scale=1.25" alt="badge" /></a>
 
 This is dataset about cervical cancer occurrences. Cervical cancer is 
 one the most frequent cancer diseases that occur to women. This dataset 
