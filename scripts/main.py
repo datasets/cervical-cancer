@@ -1,13 +1,34 @@
-from urllib.request import urlopen
+import os
+import requests
+import zipfile
+import shutil
 
-with open("../data/cervical-cancer.csv", "w") as bumps_file:
-    unique_row = []
-    for line in urlopen("https://archive.ics.uci.edu/ml/machine-learning-databases/00383/risk_factors_cervical_cancer.csv"):
-        decodedLine = line.decode('UTF-8')
-        decodedLine = decodedLine.replace('?', '')
+url = "https://archive.ics.uci.edu/static/public/383/cervical+cancer+risk+factors.zip"
 
-        if decodedLine.strip() not in unique_row:
-            unique_row.append(decodedLine.strip())
-            bumps_file.write(decodedLine.strip() + '\n')
+def download():
+    response = requests.get(url)
+    with open("cervical_cancer_risk_factors.zip", "wb") as f:
+        f.write(response.content)
 
-    bumps_file.close()
+def unzip():
+    with zipfile.ZipFile("cervical_cancer_risk_factors.zip", 'r') as zip_ref:
+        zip_ref.extractall("cervical_cancer_risk_factors")
+
+def transform_csv():
+    input_file = 'cervical_cancer_risk_factors/risk_factors_cervical_cancer.csv'
+    output_file = 'data/cervical-cancer.csv'
+
+    with open(input_file, 'r', encoding='utf-8') as infile, open(output_file, 'w', encoding='utf-8') as outfile:
+        for line in infile:
+            outfile.write(line.replace('?', ''))  # Replaces '?' but keeps everything else
+
+
+def clean():
+    shutil.rmtree("cervical_cancer_risk_factors")
+    os.remove("cervical_cancer_risk_factors.zip")
+
+if __name__=='__main__':
+    download()
+    unzip()
+    transform_csv()
+    clean()
